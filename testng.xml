@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.assure.qa.testcases.LoginPageTest"></class>
+      <class name="com.assure.qa.testcases.LoginPageTest">
+      	<methods>
+      		<include name="loginSuccessfulTest"></include>
+      	</methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
