@@ -74,18 +74,19 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@Test(priority=3,dataProvider="getLoginTestData")
-	public void loginSuccessfulTest(Hashtable<String, String> testdata, ITestContext context){
+	public void loginSuccessfulTest(Hashtable<String, String> testdata){
 		sa = new SoftAssert();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-		sa.assertEquals(homePage.verifyUserName(), "Hello, Abhilashaa");
-//		sa.assertEquals(homePage.verifyEmailID(), "abhilasha.jha@northgateps.com");
+//		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homePage = loginPage.login(testdata.get("InputUsername"), testdata.get("InputPassword"));
+		sa.assertEquals(homePage.verifyUserName(), testdata.get("ExpectedUsername"));
 		sa.assertAll();
 	}
 	
 	
 	@DataProvider
 	public Object[][] getLoginTestData() {
-		XLS_POI xlsx = new XLS_POI("D:\\Eclipse SimRel WorkSpace\\ProjectObjectModel\\src\\main\\java\\com\\assure\\qa\\testdata\\AssureTestData.xlsx"); 
+		testDataSheetPath = "\\src\\main\\java\\com\\assure\\qa\\testdata\\AssureTestData.xlsx";
+		XLS_POI xlsx = new XLS_POI(System.getProperty("user.dir") + testDataSheetPath); 
 		return (dataProvider.getData(xlsx, "LoginTest", "LoginTest"));
 	}
 	

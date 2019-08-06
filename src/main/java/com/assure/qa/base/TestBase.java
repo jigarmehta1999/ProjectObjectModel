@@ -17,10 +17,11 @@ import com.assure.qa.util.WebEventListener;
 
 public class TestBase {
 
-	public static WebDriver driver;
-	public static Properties prop;
-	public static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+	public WebDriver driver;
+	public Properties prop;
+	public EventFiringWebDriver e_driver;
+	public WebEventListener eventListener;
+	public String testDataSheetPath;
 
 	public TestBase() {
 		try {
@@ -35,7 +36,7 @@ public class TestBase {
 		}
 	}
 
-	public static void initialization() {
+	public void initialization() {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {

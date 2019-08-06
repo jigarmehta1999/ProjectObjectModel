@@ -21,8 +21,7 @@ public class TestUtil_Old extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = "/Users/naveenkhunteta/Documents/workspace"
-			+ "/FreeCRMTest/src/main/java/com/crm/qa/testdata/FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "\\src\\main\\java\\com\\assure\\qa\\testdata\\AssureTestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
@@ -56,7 +55,7 @@ public class TestUtil_Old extends TestBase {
 		}
 		return data;
 	}
-
+/*
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
@@ -97,5 +96,5 @@ public class TestUtil_Old extends TestBase {
 //		js.executeScript("$.growl.warning({ title: 'Warning!', message: 'your warning message goes here' });");
 		Thread.sleep(5000);
 	}
-
+*/
 }
