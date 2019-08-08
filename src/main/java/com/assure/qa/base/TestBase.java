@@ -14,14 +14,16 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.assure.qa.util.TestUtil_Old;
 import com.assure.qa.util.WebEventListener;
+import com.assure.qa.util.XLS_POI;
 
 public class TestBase {
 
-	public WebDriver driver;
-	public Properties prop;
-	public EventFiringWebDriver e_driver;
-	public WebEventListener eventListener;
-	public String testDataSheetPath;
+	public static WebDriver driver;
+	public static Properties prop;
+	public static EventFiringWebDriver e_driver;
+	public static WebEventListener eventListener;
+	public static String testDataSheetPath;
+//	public static XLS_POI xlsx;
 
 	public TestBase() {
 		try {
@@ -36,7 +38,7 @@ public class TestBase {
 		}
 	}
 
-	public void initialization() {
+	public static void initialization() {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {

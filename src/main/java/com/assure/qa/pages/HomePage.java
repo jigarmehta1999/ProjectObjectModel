@@ -1,5 +1,6 @@
 package com.assure.qa.pages;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -35,4 +36,20 @@ public class HomePage extends TestBase{
 		return(CurrentUserName.getAttribute("value"));
 	}
 	
+	public List<String> verifySections() {
+		List<String> tempsections = new ArrayList<String>();
+		for (int i = 0; i < sections.size(); i++) {
+			tempsections.add(sections.get(i).getText());
+		}
+		return tempsections;
+	}
+	
+	public List<String> verifyButtons() {
+		List<String> tempbuttons = new ArrayList<String>();
+		for (int i = 0; i < buttons.size(); i++) {
+			tempbuttons.add(buttons.get(i).getAttribute("value").trim());
+			System.out.println("button = " + buttons.get(i).getAttribute("value"));
+		}
+		return tempbuttons;
+	}
 }

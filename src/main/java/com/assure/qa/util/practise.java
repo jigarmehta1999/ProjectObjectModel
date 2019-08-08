@@ -1,5 +1,6 @@
 package com.assure.qa.util;
 
+import java.util.Hashtable;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,7 +12,18 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class practise {
 
 	public static void main(String[] args) {
+	
 		
+/*		String testDataSheetPath = "\\src\\main\\java\\com\\assure\\qa\\testdata\\" + "AssureTestData.xlsx";
+		XLS_POI xlsx = new XLS_POI(System.getProperty("user.dir") + testDataSheetPath);
+		
+		Object[][] testDataTable = dataProvider.getData(xlsx, "VerifySectionNames", "VerifySectionNames");
+		
+		for (int i = 0; i < testDataTable.length; i++) {
+			Hashtable<String, String> ii = (Hashtable<String, String>)testDataTable[i][0];
+			System.out.println("data = " + ii.get("SectionName"));
+		}
+*/		
 		WebDriver driver = new ChromeDriver();
 		driver.navigate().to("http://lp-new-qa-web/ENGAGE_M3PPORACLE/ES/Presentation/Account/Logon");
 		System.out.println(" Page title = " + driver.getTitle());
@@ -25,9 +37,10 @@ public class practise {
 		
 		driver.findElement(By.xpath("//a[text()='Home']")).click();
 		
-		System.out.println(driver.findElement(By.name("UserNameLoggedIn")).getText());
-		System.out.println(driver.findElement(By.id("CurrentUserName")).getAttribute("value"));
-		
+		List<WebElement> buttons = driver.findElements(By.xpath("//div[@class='col-xs-3']/input | //div[@class='col-xs-3']/a"));
+		for (int i = 0; i < buttons.size(); i++) {
+			System.out.println(buttons.get(i).getAttribute("value"));
+		}
 		
 //		List<WebElement> sections = driver.findElements(By.xpath("//a[@class='accordion-toggle']/strong"));
 		

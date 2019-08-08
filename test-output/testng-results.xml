@@ -1,152 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="2" failed="1" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-05T20:30:18Z" name="Suite" finished-at="2019-08-05T20:31:22Z" duration-ms="63687">
+  <suite started-at="2019-08-08T16:47:30Z" name="Suite" finished-at="2019-08-08T16:47:49Z" duration-ms="18957">
     <groups>
     </groups>
-    <test started-at="2019-08-05T20:30:18Z" name="Test" finished-at="2019-08-05T20:31:22Z" duration-ms="63687">
+    <test started-at="2019-08-08T16:47:30Z" name="Test4" finished-at="2019-08-08T16:47:49Z" duration-ms="18957">
       <class name="com.assure.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:20Z" name="setUp" finished-at="2019-08-05T20:30:29Z" duration-ms="8986" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:30Z" name="setUp" finished-at="2019-08-08T16:47:39Z" duration-ms="8745" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginSuccessfulTest(java.util.Hashtable)[pri:3, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:29Z" name="loginSuccessfulTest" data-provider="getLoginTestData" finished-at="2019-08-05T20:30:35Z" duration-ms="6008" status="PASS">
+        <test-method signature="VerifyButtonNames(org.testng.ITestContext)[pri:5, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:39Z" name="VerifyButtonNames" finished-at="2019-08-08T16:47:48Z" duration-ms="9298" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpectedUsername=Hello, Abhilashaa, InputUsername=abhilasha.jha@northgateps.com, InputPassword=N0rthg4t31}]]>
+                <![CDATA[org.testng.TestRunner@7555b920]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginSuccessfulTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:35Z" name="tearDown" finished-at="2019-08-05T20:30:35Z" duration-ms="881" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:35Z" name="setUp" finished-at="2019-08-05T20:30:45Z" duration-ms="9111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginSuccessfulTest(java.util.Hashtable)[pri:3, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:45Z" name="loginSuccessfulTest" data-provider="getLoginTestData" finished-at="2019-08-05T20:30:50Z" duration-ms="5427" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedUsername=Hello, Abhilashaa, InputUsername=abhilasha.jha@northgateps.com, InputPassword=N0rthg4t31}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccessfulTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:50Z" name="tearDown" finished-at="2019-08-05T20:30:51Z" duration-ms="911" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:51Z" name="setUp" finished-at="2019-08-05T20:30:59Z" duration-ms="7692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginSuccessfulTest(java.util.Hashtable)[pri:3, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:30:59Z" name="loginSuccessfulTest" data-provider="getLoginTestData" finished-at="2019-08-05T20:31:21Z" duration-ms="22651" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedUsername=Hello, Abhilashaa, InputUsername=abhilasha.jha@northgateps.com, InputPassword=N0rthg4t311}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"name","selector":"UserNameLoggedIn"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUM-LAP-409', ip: '192.168.1.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\JIGAR~1.MEH\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58117}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 46e1a3bd4418a0063926e5b718d92bf7
-*** Element info: {Using=name, value=UserNameLoggedIn}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"name","selector":"UserNameLoggedIn"}
-  (Session info: chrome=75.0.3770.142)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MUM-LAP-409', ip: '192.168.1.102', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\JIGAR~1.MEH\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58117}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.142, webStorageEnabled: true}
-Session ID: 46e1a3bd4418a0063926e5b718d92bf7
-*** Element info: {Using=name, value=UserNameLoggedIn}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-at com.sun.proxy.$Proxy11.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.getText(Unknown Source)
-at com.assure.qa.pages.HomePage.verifyUserName(HomePage.java:31)
-at com.assure.qa.testcases.LoginPageTest.loginSuccessfulTest(LoginPageTest.java:81)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginSuccessfulTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@17a7f733]" started-at="2019-08-05T20:31:21Z" name="tearDown" finished-at="2019-08-05T20:31:22Z" duration-ms="912" status="PASS">
+        </test-method> <!-- VerifyButtonNames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:48Z" name="tearDown" finished-at="2019-08-08T16:47:49Z" duration-ms="870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.assure.qa.testcases.LoginPageTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test4 -->
   </suite> <!-- Suite -->
 </testng-results>

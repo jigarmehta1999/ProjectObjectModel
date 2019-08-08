@@ -37,6 +37,10 @@ public class LoginPage extends TestBase {
 
 	@FindBy(xpath = "//img[@class='img-responsive']")
 	WebElement AssureLogo;
+	
+	
+	@FindBy(xpath="//div[@class='validation-summary-errors']//li")
+	WebElement LoginUnsuccessfullMessage;
 
 	// Initializing the Page Objects:
 	public LoginPage() {
@@ -122,14 +126,27 @@ public class LoginPage extends TestBase {
 		return new RegisterPage();
 	}
 
-	public HomePage login(String un, String pwd) {
+	public HomePage LoginSuccessfull(String un, String pwd) {
 		UserName.sendKeys(un);
 		Password.sendKeys(pwd);
 		btnLogin.click();
-
+	
 		return new HomePage();
 	}
 
+	public LoginPage LoginUnsuccessfull(String un, String pwd) {
+		UserName.sendKeys(un);
+		Password.sendKeys(pwd);
+		btnLogin.click();
+	
+		return new LoginPage();
+	}
+
+	public String LoginUnsuccessfullMessage() {
+		return LoginUnsuccessfullMessage.getText();
+	}
+	
+	
 	/*
 	 * public DealsPage clickOnDealsLink(){ dealsLink.click(); return new
 	 * DealsPage(); }

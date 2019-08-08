@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <parameter name="testDataSheetName" value="AssureTestData.xlsx"/>
+  <test thread-count="5" name="Test4(failed)">
+    <parameter name="testDataTab" value="VerifyButtonNames"/>
+    <parameter name="testCaseName" value="VerifyButtonNames"/>
     <classes>
       <class name="com.assure.qa.testcases.LoginPageTest">
         <methods>
-          <include name="loginSuccessfulTest" invocation-numbers="2"/>
+          <include name="VerifyButtonNames" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.assure.qa.testcases.LoginPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test4(failed) -->
 </suite> <!-- Failed suite [Suite] -->
