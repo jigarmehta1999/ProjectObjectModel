@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <parameter name="testDataSheetName" value="AssureTestData.xlsx"></parameter>
-<!--   <test name="Test1">
+  <test name="Test1">
   <parameter name="testCaseName" value="LoginTestSuccessFull"></parameter>
   <parameter name="testDataTab" value="LoginTestSuccessFull"></parameter>
     <classes>
@@ -12,9 +12,9 @@
       	</methods>
       </class>
     </classes>
-  </test> -->
+  </test>
   
-<!--   <test name="Test2">
+  <test name="Test2">
   <parameter name="testCaseName" value="LoginTestUnSuccessFull"></parameter>
   <parameter name="testDataTab" value="LoginTestUnSuccessFull"></parameter>
     <classes>
@@ -24,9 +24,9 @@
       	</methods>
       </class>
     </classes>
-  </test>  -->
+  </test> 
   
-<!--   <test name="Test3">
+  <test name="Test3">
   <parameter name="testCaseName" value="VerifySectionNames"></parameter>
   <parameter name="testDataTab" value="VerifySectionNames"></parameter>
     <classes>
@@ -37,8 +37,8 @@
       </class>
     </classes>
   </test>
- -->  
-  <test name="Test4">
+
+<!--   <test name="Test4">
   <parameter name="testCaseName" value="VerifyButtonNames"></parameter>
   <parameter name="testDataTab" value="VerifyButtonNames"></parameter>
     <classes>
@@ -49,7 +49,7 @@
       </class>
     </classes>
   </test> 
-   
+ -->   
 </suite>
 
 

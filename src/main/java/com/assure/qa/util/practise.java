@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class practise {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	
 		
 /*		String testDataSheetPath = "\\src\\main\\java\\com\\assure\\qa\\testdata\\" + "AssureTestData.xlsx";
@@ -37,10 +38,16 @@ public class practise {
 		
 		driver.findElement(By.xpath("//a[text()='Home']")).click();
 		
-		List<WebElement> buttons = driver.findElements(By.xpath("//div[@class='col-xs-3']/input | //div[@class='col-xs-3']/a"));
-		for (int i = 0; i < buttons.size(); i++) {
-			System.out.println(buttons.get(i).getAttribute("value"));
-		}
+		driver.findElement(By.xpath("//input[@value='Abandoned Vehicles']")).click();;
+		
+		Thread.sleep(3000);
+		
+		Select type = new Select(driver.findElement(By.id("ApplicationType")));
+		type.selectByValue("ABVC");
+		
+		Thread.sleep(5000);
+		
+		type.selectByValue("ABVD");
 		
 //		List<WebElement> sections = driver.findElements(By.xpath("//a[@class='accordion-toggle']/strong"));
 		
