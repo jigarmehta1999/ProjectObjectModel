@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-08T16:47:30Z" name="Suite" finished-at="2019-08-08T16:47:49Z" duration-ms="18957">
+  <suite started-at="2019-08-13T16:03:33Z" name="Suite" finished-at="2019-08-13T16:04:13Z" duration-ms="40037">
     <groups>
     </groups>
-    <test started-at="2019-08-08T16:47:30Z" name="Test4" finished-at="2019-08-08T16:47:49Z" duration-ms="18957">
-      <class name="com.assure.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:30Z" name="setUp" finished-at="2019-08-08T16:47:39Z" duration-ms="8745" status="PASS">
+    <test started-at="2019-08-13T16:03:33Z" name="Test5" finished-at="2019-08-13T16:04:13Z" duration-ms="40037">
+      <class name="com.assure.qa.testcases.AbandonedVehiclesPopUpTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:03:33Z" name="setUp" finished-at="2019-08-13T16:03:41Z" duration-ms="8782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyButtonNames(org.testng.ITestContext)[pri:5, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:39Z" name="VerifyButtonNames" finished-at="2019-08-08T16:47:48Z" duration-ms="9298" status="PASS">
+        <test-method signature="selectAbandonedVehiclesType(org.testng.ITestContext)[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:03:41Z" name="selectAbandonedVehiclesType" finished-at="2019-08-13T16:04:11Z" duration-ms="30035" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7555b920]]>
+                <![CDATA[org.testng.TestRunner@1af05b03]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyButtonNames -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.LoginPageTest@7c1e2a9e]" started-at="2019-08-08T16:47:48Z" name="tearDown" finished-at="2019-08-08T16:47:49Z" duration-ms="870" status="PASS">
+        </test-method> <!-- selectAbandonedVehiclesType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:04:11Z" name="tearDown" finished-at="2019-08-13T16:04:13Z" duration-ms="1163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.assure.qa.testcases.LoginPageTest -->
-    </test> <!-- Test4 -->
+      </class> <!-- com.assure.qa.testcases.AbandonedVehiclesPopUpTest -->
+    </test> <!-- Test5 -->
   </suite> <!-- Suite -->
 </testng-results>

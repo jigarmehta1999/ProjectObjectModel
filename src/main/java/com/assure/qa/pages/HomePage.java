@@ -24,6 +24,32 @@ public class HomePage extends TestBase{
 	@FindBy(id="CurrentUserName")
 	WebElement CurrentUserName;
 	
+	
+	@FindBy(xpath="//a[text()='Home']")
+	WebElement HomeButton;
+	
+	@FindBy(xpath="//a[text()='Reports']")
+	WebElement ReportsButton;
+	
+	@FindBy(xpath="//a[text()='Dashboard']")
+	WebElement DashboardButton;
+	
+	@FindBy(xpath="//a[text()='Notifications']")
+	WebElement NotificationsButton;
+	
+	@FindBy(xpath="//a[text()='Letters']")
+	WebElement LettersButton;
+	
+	@FindBy(xpath="//a[text()='Search']")
+	WebElement SearchButton;
+	
+	@FindBy(xpath="//a[text()='Public']")
+	WebElement PublicButton;
+	
+	@FindBy(xpath="//a[text()='Support']")
+	WebElement SupportButton;
+	
+	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -51,5 +77,17 @@ public class HomePage extends TestBase{
 			System.out.println("button = " + buttons.get(i).getAttribute("value"));
 		}
 		return tempbuttons;
+	}
+	
+	public void clickHomeButton() {
+		HomeButton.click();
+	}
+	
+	public void clickButton(String buttonName) {
+		for (int i = 0; i < buttons.size(); i++) {
+			if(buttons.get(i).getAttribute("value").equals(buttonName)) {
+				buttons.get(i).click();
+			}
+		}
 	}
 }

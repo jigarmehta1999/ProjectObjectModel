@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.assure.qa.testcases.LoginPageTest" class="method navigator-link" hash-for-method="VerifyButtonNames(org.testng.TestRunner@7555b920)">VerifyButtonNames(org.testng.TestRunner@7555b920)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.assure.qa.testcases.AbandonedVehiclesPopUpTest" class="method navigator-link" hash-for-method="selectAbandonedVehiclesType(org.testng.TestRunner@1af05b03)">selectAbandonedVehiclesType(org.testng.TestRunner@1af05b03)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -120,15 +120,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.assure.qa.testcases.LoginPageTest</span>
+              <span class="class-name">com.assure.qa.testcases.AbandonedVehiclesPopUpTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyButtonNames(org.testng.TestRunner@7555b920)">
-                  </a> <!-- VerifyButtonNames(org.testng.TestRunner@7555b920) -->
-                  <span class="method-name">VerifyButtonNames</span>
-                  <span class="parameters">(org.testng.TestRunner@7555b920)</span>
+                  <a name="selectAbandonedVehiclesType(org.testng.TestRunner@1af05b03)">
+                  </a> <!-- selectAbandonedVehiclesType(org.testng.TestRunner@1af05b03) -->
+                  <span class="method-name">selectAbandonedVehiclesType</span>
+                  <span class="parameters">(org.testng.TestRunner@1af05b03)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,17 +144,17 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;testDataSheetName&quot; value=&quot;AssureTestData.xlsx&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test4&quot;&gt;
-    &lt;parameter name=&quot;testDataTab&quot; value=&quot;VerifyButtonNames&quot;/&gt;
-    &lt;parameter name=&quot;testCaseName&quot; value=&quot;VerifyButtonNames&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test5&quot;&gt;
+    &lt;parameter name=&quot;testDataTab&quot; value=&quot;SelectAbandonedVehicles&quot;/&gt;
+    &lt;parameter name=&quot;testCaseName&quot; value=&quot;selectAbandonedVehiclesType&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.assure.qa.testcases.LoginPageTest&quot;&gt;
+      &lt;class name=&quot;com.assure.qa.testcases.AbandonedVehiclesPopUpTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;VerifyButtonNames&quot;/&gt;
+          &lt;include name=&quot;selectAbandonedVehiclesType&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.assure.qa.testcases.LoginPageTest --&gt;
+      &lt;/class&gt; &lt;!-- com.assure.qa.testcases.AbandonedVehiclesPopUpTest --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test4 --&gt;
+  &lt;/test&gt; &lt;!-- Test5 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,7 +166,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test4 (1 class)</span>
+                <span class="test-name">Test5 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,14 +194,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyButtonNames')
-data.setCell(0, 2, 'com.assure.qa.testcases.LoginPageTest')
-data.setCell(0, 3, 9298);
+data.setCell(0, 1, 'selectAbandonedVehiclesType')
+data.setCell(0, 2, 'com.assure.qa.testcases.AbandonedVehiclesPopUpTest')
+data.setCell(0, 3, 30035);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -216,21 +216,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.assure.qa.testcases.LoginPageTest</span>
+              <span class="ignored-class-name">com.assure.qa.testcases.AbandonedVehiclesPopUpTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">VerifySectionNames</span>
-                <br/>
-                <span class="ignored-method-name">loginPageTitleTest</span>
-                <br/>
-                <span class="ignored-method-name">isAssureElementsDisplayedAndEnabled</span>
-                <br/>
-                <span class="ignored-method-name">VerifyloginSuccessfulTest</span>
-                <br/>
-                <span class="ignored-method-name">VerifyloginUnsuccessfulMessageTest</span>
+                <span class="ignored-method-name">isAbandonedVehiclesPopUpElementsDisplayedAndEnabled</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -242,18 +234,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.assure.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.assure.qa.testcases.AbandonedVehiclesPopUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyButtonNames(org.testng.TestRunner@7555b920)</span>
-                <span class="method-start">8745 ms</span>
+                <span class="method-name">selectAbandonedVehiclesType(org.testng.TestRunner@1af05b03)</span>
+                <span class="method-start">8782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18045 ms</span>
+                <span class="method-start">38823 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

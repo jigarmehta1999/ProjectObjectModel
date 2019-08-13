@@ -38,16 +38,23 @@ public class practise {
 		
 		driver.findElement(By.xpath("//a[text()='Home']")).click();
 		
-		driver.findElement(By.xpath("//input[@value='Abandoned Vehicles']")).click();;
+		driver.findElement(By.xpath("//input[@value='Abandoned Vehicles']")).click();
 		
 		Thread.sleep(3000);
 		
-		Select type = new Select(driver.findElement(By.id("ApplicationType")));
-		type.selectByValue("ABVC");
+		WebElement dropdown = driver.findElement(By.id("ApplicationType"));
 		
-		Thread.sleep(5000);
+		Select VehicleType = new Select(dropdown);
+		VehicleType.selectByValue("ABVC");
 		
-		type.selectByValue("ABVD");
+//		Thread.sleep(3000);
+		
+//		Select type = new Select(driver.findElement(By.id("ApplicationType")));
+//		type.selectByValue("ABVC");
+		
+//		Thread.sleep(5000);
+		
+//		type.selectByValue("ABVD");
 		
 //		List<WebElement> sections = driver.findElements(By.xpath("//a[@class='accordion-toggle']/strong"));
 		
