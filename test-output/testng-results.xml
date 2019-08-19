@@ -2,27 +2,20 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-08-13T16:03:33Z" name="Suite" finished-at="2019-08-13T16:04:13Z" duration-ms="40037">
+  <suite started-at="2019-08-16T09:59:01Z" name="Suite" finished-at="2019-08-16T09:59:22Z" duration-ms="21674">
     <groups>
     </groups>
-    <test started-at="2019-08-13T16:03:33Z" name="Test5" finished-at="2019-08-13T16:04:13Z" duration-ms="40037">
+    <test started-at="2019-08-16T09:59:01Z" name="Test5" finished-at="2019-08-16T09:59:22Z" duration-ms="21674">
       <class name="com.assure.qa.testcases.AbandonedVehiclesPopUpTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:03:33Z" name="setUp" finished-at="2019-08-13T16:03:41Z" duration-ms="8782" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@35841320]" started-at="2019-08-16T09:59:01Z" name="setUp" finished-at="2019-08-16T09:59:11Z" duration-ms="10272" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="selectAbandonedVehiclesType(org.testng.ITestContext)[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:03:41Z" name="selectAbandonedVehiclesType" finished-at="2019-08-13T16:04:11Z" duration-ms="30035" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@1af05b03]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="isAbandonedVehiclesPopUpElementsDisplayedAndEnabled()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@35841320]" started-at="2019-08-16T09:59:11Z" name="isAbandonedVehiclesPopUpElementsDisplayedAndEnabled" finished-at="2019-08-16T09:59:21Z" duration-ms="9641" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectAbandonedVehiclesType -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@1af2d44a]" started-at="2019-08-13T16:04:11Z" name="tearDown" finished-at="2019-08-13T16:04:13Z" duration-ms="1163" status="PASS">
+        </test-method> <!-- isAbandonedVehiclesPopUpElementsDisplayedAndEnabled -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.AbandonedVehiclesPopUpTest@35841320]" started-at="2019-08-16T09:59:21Z" name="tearDown" finished-at="2019-08-16T09:59:22Z" duration-ms="1712" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

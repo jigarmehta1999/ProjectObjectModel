@@ -12,9 +12,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.assure.qa.util.TestUtil_Old;
+import com.assure.qa.util.ExtentHtmlManager;
 import com.assure.qa.util.WebEventListener;
-import com.assure.qa.util.XLS_POI;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 
 public class TestBase {
 
@@ -25,10 +26,13 @@ public class TestBase {
 	public static String testDataSheetPath;
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
+	public ExtentReports rep = ExtentHtmlManager.getExtentReportsInstance();
+	public ExtentTest test;
 	
 //	public static XLS_POI xlsx;
 
 	public TestBase() {
+		System.out.println("inside testbase...");
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
@@ -42,6 +46,7 @@ public class TestBase {
 	}
 
 	public static void initialization() {
+		System.out.println("inside initialization method...");
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {

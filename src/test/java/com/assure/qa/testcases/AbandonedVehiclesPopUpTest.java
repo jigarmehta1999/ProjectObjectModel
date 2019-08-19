@@ -15,6 +15,7 @@ import com.assure.qa.pages.HomePage;
 import com.assure.qa.pages.LoginPage;
 import com.assure.qa.util.XLS_POI;
 import com.assure.qa.util.dataProvider;
+import com.aventstack.extentreports.Status;
 
 public class AbandonedVehiclesPopUpTest extends TestBase {
 
@@ -25,10 +26,12 @@ public class AbandonedVehiclesPopUpTest extends TestBase {
 	
 	public AbandonedVehiclesPopUpTest() {
 		super();
+		System.out.println("inside AbandonedVehiclesPopUpTest constructor...");
 	}
 	
 	@BeforeMethod
 	public void setUp(){
+		System.out.println("inside setUP before method...");
 		initialization();
 		loginPage = new LoginPage();
 //		homePage = new HomePage();
@@ -37,11 +40,28 @@ public class AbandonedVehiclesPopUpTest extends TestBase {
 	
 	@Test
 	public void isAbandonedVehiclesPopUpElementsDisplayedAndEnabled() {
+		System.out.println("inside isAbandonedVehiclesPopUpElementsDisplayedAndEnabled...");
 		sa = new SoftAssert();
+		test = rep.createTest("Testing if Abandoned Vehicles PopUp Elements are Displayed and Enabled");
+		
 		homePage = loginPage.LoginSuccessfull(prop.getProperty("username"), prop.getProperty("password"));
+		
+		
 		homePage.clickHomeButton();
 		homePage.clickButton("Abandoned Vehicles");
 	
+		if(abandonedvehiclespopup.getAbandonedVehiclesPopUpDialogTitleText().equals("Please select abandoned vehicles type")) {
+			System.out.println("Title matches...");
+			test.log(Status.PASS, "Actual Title displayed matches matches with expected title");
+			test.log(Status.INFO, "Title displayed is: " + abandonedvehiclespopup.getAbandonedVehiclesPopUpDialogTitleText());
+		}else {
+			System.out.println("Title does not match...");
+			test.log(Status.FAIL, "Title displayed is incorrect");
+			test.log(Status.INFO, "Expected title is: Please select abandoned vehicles type");
+			test.log(Status.INFO, "Actual title is: " + abandonedvehiclespopup.getAbandonedVehiclesPopUpDialogTitleText());
+		}
+		
+		sa.assertEquals(abandonedvehiclespopup.getAbandonedVehiclesPopUpDialogTitleText(), "Please select abandoned vehicles type");
 		sa.assertTrue(abandonedvehiclespopup.isAbandonedVehiclesPopUpDialogTitleDisplayed());
 		sa.assertTrue(abandonedvehiclespopup.isAbandonedVehiclesTypeTextDisplayed());
 		
@@ -93,6 +113,7 @@ public class AbandonedVehiclesPopUpTest extends TestBase {
 	
 	@AfterMethod
 	public void tearDown(){
+		rep.flush();
 		driver.quit();
 		
 	}

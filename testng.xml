@@ -56,7 +56,7 @@
     <classes>
       <class name="com.assure.qa.testcases.AbandonedVehiclesPopUpTest">
       	<methods>
-      		<include name="selectAbandonedVehiclesType"></include>
+      		<include name="isAbandonedVehiclesPopUpElementsDisplayedAndEnabled"></include>
       	</methods>
       </class>
     </classes>

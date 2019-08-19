@@ -9,8 +9,8 @@
       <class name="com.assure.qa.testcases.AbandonedVehiclesPopUpTest">
         <methods>
           <include name="tearDown"/>
-          <include name="selectAbandonedVehiclesType" invocation-numbers="0"/>
           <include name="setUp"/>
+          <include name="isAbandonedVehiclesPopUpElementsDisplayedAndEnabled"/>
         </methods>
       </class> <!-- com.assure.qa.testcases.AbandonedVehiclesPopUpTest -->
     </classes>
