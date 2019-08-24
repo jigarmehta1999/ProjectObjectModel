@@ -1,0 +1,76 @@
+# Created at 2019-08-25T00:46:59.269
+org.testng.TestNGException: 
+Cannot instantiate class com.assure.qa.testcases.HomePageTest
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:30)
+	at org.testng.internal.ClassHelper.createInstance1(ClassHelper.java:423)
+	at org.testng.internal.ClassHelper.createInstance(ClassHelper.java:336)
+	at org.testng.internal.ClassImpl.getDefaultInstance(ClassImpl.java:125)
+	at org.testng.internal.ClassImpl.getInstances(ClassImpl.java:190)
+	at org.testng.TestClass.getInstances(TestClass.java:95)
+	at org.testng.TestClass.initTestClassesAndInstances(TestClass.java:81)
+	at org.testng.TestClass.init(TestClass.java:73)
+	at org.testng.TestClass.<init>(TestClass.java:38)
+	at org.testng.TestRunner.initMethods(TestRunner.java:389)
+	at org.testng.TestRunner.init(TestRunner.java:271)
+	at org.testng.TestRunner.init(TestRunner.java:241)
+	at org.testng.TestRunner.<init>(TestRunner.java:167)
+	at org.testng.SuiteRunner$DefaultTestRunnerFactory.newTestRunner(SuiteRunner.java:663)
+	at org.testng.SuiteRunner.init(SuiteRunner.java:260)
+	at org.testng.SuiteRunner.<init>(SuiteRunner.java:198)
+	at org.testng.TestNG.createSuiteRunner(TestNG.java:1295)
+	at org.testng.TestNG.createSuiteRunners(TestNG.java:1273)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1128)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.testng.internal.ObjectFactoryImpl.newInstance(ObjectFactoryImpl.java:24)
+	... 27 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.assure.qa.base cannot be resolved
+	The import com.assure.qa.pages cannot be resolved
+	The import com.assure.qa.pages cannot be resolved
+	The import com.assure.qa.util cannot be resolved
+	The import com.assure.qa.util cannot be resolved
+	TestBase cannot be resolved to a type
+	LoginPage cannot be resolved to a type
+	HomePage cannot be resolved to a type
+	The method initialization() is undefined for the type HomePageTest
+	LoginPage cannot be resolved to a type
+	LoginPage cannot be resolved to a type
+	HomePage cannot be resolved to a type
+	LoginPage cannot be resolved to a type
+	prop cannot be resolved
+	prop cannot be resolved
+	HomePage cannot be resolved to a type
+	testDataSheetPath cannot be resolved to a variable
+	XLS_POI cannot be resolved to a type
+	XLS_POI cannot be resolved to a type
+	testDataSheetPath cannot be resolved to a variable
+	dataProvider cannot be resolved
+	HomePage cannot be resolved to a type
+	LoginPage cannot be resolved to a type
+	prop cannot be resolved
+	prop cannot be resolved
+	HomePage cannot be resolved to a type
+	testDataSheetPath cannot be resolved to a variable
+	XLS_POI cannot be resolved to a type
+	XLS_POI cannot be resolved to a type
+	testDataSheetPath cannot be resolved to a variable
+	dataProvider cannot be resolved
+	driver cannot be resolved
+
+	at com.assure.qa.testcases.HomePageTest.<init>(HomePageTest.java:12)
+	... 32 more
+
+

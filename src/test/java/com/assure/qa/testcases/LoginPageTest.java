@@ -42,7 +42,7 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void isAssureElementsDisplayedAndEnabled(){
+	public void isLoginPageElementsDisplayedAndEnabled(){
 		sa = new SoftAssert();
 		sa.assertTrue(loginPage.isAssureLogoDisplayed());
 		
@@ -85,7 +85,7 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test(priority=4,dataProvider="getLoginTestData")
-	public void VerifyloginUnsuccessfulMessageTest(Hashtable<String, String> testdata, ITestContext context) {
+	public void VerifyloginUnsuccessfulMessageTest(Hashtable<String, String> testdata) {
 		sa = new SoftAssert();
 //		System.out.println("testdata.get(\"InputUsername\") = " + testdata.get("InputUsername"));
 //		System.out.println("testdata.get(\"InputPassword\") = " + testdata.get("InputPassword"));
@@ -95,58 +95,6 @@ public class LoginPageTest extends TestBase{
 	}
 	
 //	
-	@Test(priority=5)
-	public void VerifySectionNames(ITestContext context) {
-		sa = new SoftAssert();
-		homePage = loginPage.LoginSuccessfull(prop.getProperty("username"), prop.getProperty("password"));
-		ArrayList<String> actualSectionList = (ArrayList<String>) homePage.verifySections();
-		
-		ArrayList<String> expectedSectionList = new ArrayList<String>();
-		
-		testDataSheetPath = "\\src\\main\\java\\com\\assure\\qa\\testdata\\" + context.getCurrentXmlTest().getParameter("testDataSheetName");
-		XLS_POI xlsx = new XLS_POI(System.getProperty("user.dir") + testDataSheetPath);
-		
-		Object[][] testDataSectionTable = dataProvider.getData(xlsx, context.getCurrentXmlTest().getParameter("testCaseName"), context.getCurrentXmlTest().getParameter("testDataTab"));
-		
-		for (int i = 0; i < testDataSectionTable.length; i++) {
-			Hashtable<String, String> tempHashTableData = (Hashtable<String, String>)testDataSectionTable[i][0];
-			expectedSectionList.add(tempHashTableData.get("SectionName"));
-		}
-		sa.assertEquals(actualSectionList, expectedSectionList);
-		sa.assertAll();
-	}
-
-	
-	@Test(priority=5)
-	public void VerifyButtonNames(ITestContext context) {
-		sa = new SoftAssert();
-		homePage = loginPage.LoginSuccessfull(prop.getProperty("username"), prop.getProperty("password"));
-		
-		ArrayList<String> actualButtonList = (ArrayList<String>) homePage.verifyButtons();
-		
-		ArrayList<String> expectedButtonList = new ArrayList<String>();
-		
-		testDataSheetPath = "\\src\\main\\java\\com\\assure\\qa\\testdata\\" + context.getCurrentXmlTest().getParameter("testDataSheetName");
-		XLS_POI xlsx = new XLS_POI(System.getProperty("user.dir") + testDataSheetPath);
-		
-		Object[][] testDataSectionTable = dataProvider.getData(xlsx, context.getCurrentXmlTest().getParameter("testCaseName"), context.getCurrentXmlTest().getParameter("testDataTab"));
-		
-		for (int i = 0; i < testDataSectionTable.length; i++) {
-			Hashtable<String, String> tempHashTableData = (Hashtable<String, String>)testDataSectionTable[i][0];
-			expectedButtonList.add(tempHashTableData.get("ButtonNames"));
-		}
-
-/*		for (int i = 0; i < actualButtonList.size(); i++) {
-			System.out.println("Actual button = " + actualButtonList.get(i));
-		}
-
-		for (int i = 0; i < actualButtonList.size(); i++) {
-			System.out.println("Expected button = " + expectedButtonList.get(i));
-		}
-*/		
-		sa.assertEquals(actualButtonList, expectedButtonList);
-		sa.assertAll();
-	}
 
 	
 	
@@ -162,9 +110,4 @@ public class LoginPageTest extends TestBase{
 		driver.quit();
 		
 	}
-	
-	
-	
-	
-
 }

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-08-24T19:23:43Z" name="Suite" finished-at="2019-08-24T19:24:19Z" duration-ms="36830">
+    <groups>
+    </groups>
+    <test started-at="2019-08-24T19:23:43Z" name="Test1" finished-at="2019-08-24T19:24:02Z" duration-ms="19425">
+      <class name="com.assure.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.HomePageTest@38cee291]" started-at="2019-08-24T19:23:43Z" name="setUp" finished-at="2019-08-24T19:23:54Z" duration-ms="11730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifySectionNamesTest(org.testng.ITestContext)[pri:5, instance:com.assure.qa.testcases.HomePageTest@38cee291]" started-at="2019-08-24T19:23:54Z" name="VerifySectionNamesTest" finished-at="2019-08-24T19:24:01Z" duration-ms="6593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d56aaa6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySectionNamesTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.HomePageTest@38cee291]" started-at="2019-08-24T19:24:01Z" name="tearDown" finished-at="2019-08-24T19:24:02Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assure.qa.testcases.HomePageTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2019-08-24T19:24:02Z" name="Test2" finished-at="2019-08-24T19:24:19Z" duration-ms="17343">
+      <class name="com.assure.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.assure.qa.testcases.HomePageTest@54c5a2ff]" started-at="2019-08-24T19:24:02Z" name="setUp" finished-at="2019-08-24T19:24:11Z" duration-ms="8434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyButtonNamesTest(org.testng.ITestContext)[pri:5, instance:com.assure.qa.testcases.HomePageTest@54c5a2ff]" started-at="2019-08-24T19:24:11Z" name="VerifyButtonNamesTest" finished-at="2019-08-24T19:24:18Z" duration-ms="7791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@58b91d57]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyButtonNamesTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.assure.qa.testcases.HomePageTest@54c5a2ff]" started-at="2019-08-24T19:24:18Z" name="tearDown" finished-at="2019-08-24T19:24:19Z" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.assure.qa.testcases.HomePageTest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
