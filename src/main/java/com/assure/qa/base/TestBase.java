@@ -46,16 +46,16 @@ public class TestBase {
 	}
 
 	public static void initialization() {
-		System.out.println("inside initialization method...");
+		System.out.println("inside initialization method.......");
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("useAutomationExtension", false);
-			System.setProperty("webdriver.chrome.driver", "D:\\SeleniumDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
 			driver = new ChromeDriver(options);
 		} else if (browserName.equals("FF")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\SeleniumDrivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\SeleniumDrivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 
