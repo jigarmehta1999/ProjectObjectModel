@@ -1,12 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 1.736 s <<< FAILURE! - in TestSuite
-setUp(com.assure.qa.testcases.HomePageTest)  Time elapsed: 1.183 s  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumDrivers1\chromedriver.exe
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 72.843 s <<< FAILURE! - in TestSuite
+setUp(com.assure.qa.testcases.HomePageTest)  Time elapsed: 35.174 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUM-LAP-409', ip: '10.102.194.220', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\JIGAR~1.MEH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59472}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19f2144ce8c1fdb2a477139865c7893c
 	at com.assure.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
 
-setUp(com.assure.qa.testcases.HomePageTest)  Time elapsed: 1.308 s  <<< FAILURE!
-java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumDrivers1\chromedriver.exe
-	at com.assure.qa.testcases.HomePageTest.setUp(HomePageTest.java:31)
+VerifyButtonNamesTest(com.assure.qa.testcases.HomePageTest)  Time elapsed: 21.034 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout
+  (Session info: chrome=76.0.3809.100)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MUM-LAP-409', ip: '10.102.194.220', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.68 (420c9498db8ce..., userDataDir: C:\Users\JIGAR~1.MEH\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59497}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3efe7eac86d8c82e45c33d8d919627fe
+	at com.assure.qa.testcases.HomePageTest.VerifyButtonNamesTest(HomePageTest.java:65)
 

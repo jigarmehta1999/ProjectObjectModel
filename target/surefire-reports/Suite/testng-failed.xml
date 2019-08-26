@@ -8,7 +8,7 @@
     <classes>
       <class name="com.assure.qa.testcases.HomePageTest">
         <methods>
-          <include name="VerifySectionNamesTest" invocation-numbers="0"/>
+          <include name="VerifySectionNamesTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
@@ -21,7 +21,7 @@
     <classes>
       <class name="com.assure.qa.testcases.HomePageTest">
         <methods>
-          <include name="VerifyButtonNamesTest"/>
+          <include name="VerifyButtonNamesTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
