@@ -17,6 +17,7 @@ public class HomePage extends TestBase{
 	
 	@FindBy(xpath="//div[@class='col-xs-3']/input | //div[@class='col-xs-3']/a")
 	List<WebElement> buttons;
+	// ignore comments
 	
 	@FindBy(name="UserNameLoggedIn")
 	WebElement UserNameLoggedIn;
