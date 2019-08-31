@@ -15,17 +15,4 @@
       </class> <!-- com.assure.qa.testcases.HomePageTest -->
     </classes>
   </test> <!-- Test1(failed) -->
-  <test thread-count="5" name="Test2(failed)" verbose="0">
-    <parameter name="testDataTab" value="VerifyButtonNames"/>
-    <parameter name="testCaseName" value="VerifyButtonNames"/>
-    <classes>
-      <class name="com.assure.qa.testcases.HomePageTest">
-        <methods>
-          <include name="VerifyButtonNamesTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.assure.qa.testcases.HomePageTest -->
-    </classes>
-  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,12 +1,12 @@
-com\assure\qa\util\ExtentHtmlManager.class
-com\assure\qa\util\XLS_POI.class
 com\assure\qa\util\TestUtil_Old.class
 com\assure\qa\util\XLS_POI$1.class
-com\assure\qa\util\practise.class
 com\assure\qa\pages\RegisterPage.class
 com\assure\qa\util\WebEventListener.class
-com\assure\qa\base\TestBase.class
 com\assure\qa\pages\HomePage.class
-com\assure\qa\util\dataProvider.class
 com\assure\qa\pages\AbandonedVehiclesPopUp.class
+com\assure\qa\util\ExtentHtmlManager.class
+com\assure\qa\util\XLS_POI.class
+com\assure\qa\util\practise.class
+com\assure\qa\base\TestBase.class
+com\assure\qa\util\dataProvider.class
 com\assure\qa\pages\LoginPage.class
